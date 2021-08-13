@@ -30,6 +30,7 @@ export default class App extends Component {
         <Router history={browserHistory}>
           <Routes />
         </Router>
+        {/* DASDASDASDASDASDADADA */}
       </ThemeProvider>
     );
   }
