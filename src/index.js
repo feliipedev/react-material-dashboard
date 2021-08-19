@@ -6,7 +6,9 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import mainReducer from './store'
-const store = applyMiddleware(thunk)(createStore)(mainReducer)
+import multi from 'redux-multi'
+
+const store = applyMiddleware(thunk, multi)(createStore)(mainReducer)
 
 ReactDOM.render(
   <Provider store={store}>
